@@ -51,7 +51,7 @@ variable "alb_security_group" {
 }
 
 variable "ecs_depends_on" {
-  type    = list(string)
+  type    = any
   description = "Resource dependencies of the ECS cluster"
   default = []
 }
