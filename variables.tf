@@ -50,6 +50,12 @@ variable "alb_security_group" {
   default     = ""
 }
 
+variable "ecs_depends_on" {
+  type    = any
+  description = "Resource dependencies of the ECS cluster"
+  default = []
+}
+
 variable "ecs_cluster_arn" {
   type        = string
   description = "The ARN of the ECS cluster where service will be provisioned"
